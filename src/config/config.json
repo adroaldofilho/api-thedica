@@ -1,0 +1,8 @@
+{
+  "development":{
+    "username": "postgres",
+    "password": "pgroot",
+    "database": "thedica",
+    "host": "localhost"
+  } 
+}

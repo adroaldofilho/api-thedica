@@ -64,6 +64,6 @@
     "mocha": "^6.2.0",
     "supertest": "^4.0.2",
     "testdouble": "^3.12.4",
-    "ts-node": "^8.3.0"
+    "ts-node": "^8.4.1"
   }
 }

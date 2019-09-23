@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const Sequelize = require('sequelize');
 const basename = path.basename(__filename);
-const { dbURL , database , username , password, enviroment } = require('../config/env');
+const { dbURL , database , username , password, enviroment, dbURLHeroku } = require('../config/env');
 // const config = require('../config/env')();
 // const env = config.env || 'development';
 // const env = process.env.NODE_ENV || 'development';
@@ -13,10 +13,10 @@ const db : any = {};
 const modelRelations = require('./relations/relations');
 
 // console.log('config: ', config);
-console.log(dbURL);
+console.log(dbURLHeroku);
 
-if (dbURL) {
-  var sequelize = new Sequelize(dbURL);
+if (dbURLHeroku) {
+  var sequelize = new Sequelize(dbURLHeroku);
 } else {
   var sequelize = new Sequelize(db, username, password);
 }

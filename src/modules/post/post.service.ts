@@ -1,6 +1,6 @@
 import { IPost, createPost, createPosts } from './post.model';
 import * as BlueBird from 'bluebird';
-import { IAuthor } from '../Author/author.model';
+import { IAuthor } from '../author/author.model';
 const model = require('../../entities');
 
 class Post implements IPost {

@@ -1,4 +1,4 @@
-import { IAuthor } from "../Author/author.model";
+import { IAuthor } from "../author/author.model";
 
 export interface IPost {
     readonly id: number;

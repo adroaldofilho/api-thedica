@@ -41,7 +41,7 @@ export class Server {
     private upServer() {
         http
             .createServer(this.express)
-            .listen(serverPort)
+            .listen(serverPort || 5000)
             .on('listening', this.onServerUp.bind(this, serverPort))
             .on('error', this.onServerStartUpError.bind(this));
     }

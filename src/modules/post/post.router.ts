@@ -4,7 +4,7 @@ import PostService from './post.service';
 import AuthorService from '../author/author.service';
 import { IPost } from './post.model';
 import ResponseHandlers from '../../core/handlers/response-handlers';
-import { IAuthor } from '../Author/author.model';
+import { IAuthor } from '../author/author.model';
 import { json } from 'body-parser';
 
 
